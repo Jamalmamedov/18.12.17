@@ -1,0 +1,63 @@
+Web nas?l cal?s?r; bir Web sayfas?n? bilgisayar?n?zdaki veya telefonunuzdaki bir web taray?c?s?nda goruntulediginizde ne olduguna iliskin basitlestirilmis bir gorunum saglar.
+
+Bu teori web kodunu k?sa vadede yazmak icin gerekli degildir, ancak k?sa sure icinde arka planda neler oldugunu anlaman?zdan fayda saglamaya baslayacaks?n?z.
+
+Web'e bagl? bilgisayarlara istemciler ve sunucular denir. Etkilesim sekillerinin basitlestirilmis bir diyagram? suna benzer: client requests server responses
+
+Musteriler, tipik web kullan?c?s?n?n Internet'e bagl? cihazlar? (ornegin, bilgisayar?n?z Wi-Fi cihaz?n?za bagl? veya telefonunuz mobil ag?n?za bagl?) ve bu cihazlarda bulunan web erisen yaz?l?mlar (genellikle Firefox veya Chrome gibi bir web taray?c?d?r) ).
+
+Sunucular, web sayfalar?n?, siteleri veya uygulamalar? depolayan bilgisayarlard?r. Bir istemci cihaz? bir web sayfas?na erismek istediginde, kullan?c?n?n web taray?c?s?nda goruntulenmesi icin web sayfas?n?n bir kopyas? sunucudan istemci makinesine indirilir.
+
+
+
+Arac kutusunun diger k?s?mlar?
+
+Yukar?da anlatt?g?m?z istemci ve sunucu, hikayenin tamam?n? anlatmaz. Iceri giren diger pek cok parca var ve bunlar? asag?da ac?klayacag?z.
+
+Simdilik, web'in bir yol oldugunu hayal edelim. Yolun bir ucunda eviniz gibi bir musteri var. Yolun diger ucunda bir sey sat?n almak isteyen bir dukkan olan sunucu var.
+
+Istemci ve sunucuya ek olarak, asag?dakilere de bir merhaba dememiz gerekir:
+
+Internet baglant?n?z: Web'de veri gondermenize ve alman?za izin verir. Temelde evinizle dukkan aras?ndaki cadde gibi.
+
+TCP / IP: Iletim Denetimi Protokolu ve Internet Protokolu, verilerin web uzerinden nas?l tas?nmas? gerektigini tan?mlayan iletisim protokolleridir. Bu, siparis vermek, dukkana gitmek ve mallar?n?z? sat?n alman?za izin veren tas?ma mekanizmalar?na benzemektedir. Ornegimizde, bu bir araba ya da bisiklet gibidir (ya da etraf?nda dolasabilirsiniz).
+
+DNS: Alan Ad? Sunucular?, web siteleri icin bir adres defterine benzer. Taray?c?n?za bir web adresi yazd?g?n?zda, taray?c?, web sitesini geri alabilmek icin web sitesinin gercek adresini bulmak icin DNS'e bakar. Taray?c?n?n web sitesinde hangi sunucunun yasad?g?n? bulmas? gerekir; boylece dogru yerde HTTP mesajlar? gonderebilir (asag?ya bak?n). Bu, magazan?n adresine bakmak ve ona erisebilmek gibi.
+
+HTTP: Kopru Metni Aktar?m Protokolu, istemcilerin ve sunucular?n birbirleriyle konusmalar? icin bir dil tan?mlayan bir uygulama protokoludur. Bu, mallar?n?z? siparis etmek icin kulland?g?n?z dile benziyor.
+
+Bilesen dosyalar?: Bir web sitesi, dukkandan sat?n ald?g?n?z mallar?n farkl? parcalar? gibi bircok farkl? dosyadan olusur. Bu dosyalar iki ana turden olusur:
+
+Kod dosyalar?: Web siteleri oncelikle HTML, CSS ve JavaScript'den olusturulur, ancak diger teknolojileri biraz sonra kars?lars?n?z.
+
+Varl?klar: Bu, resimler, muzik, video, Word belgeleri ve PDF'ler gibi bir web sitesini olusturan diger tum ogeler icin ortak bir add?r.
+
+
+
+Peki tam olarak ne olacak?
+
+Taray?c?n?za bir web adresi yazd?g?n?zda (benzetme icin dukkana yurumek gibi):
+
+Taray?c? DNS sunucusuna gider ve web sitesinin yasad?g? sunucunun gercek adresini bulur (magazan?n adresini bulursunuz).
+Taray?c?, web sitesinin bir kopyas?n? musteriye gondermesini isteyen bir HTTP istek mesaj? gonderir (siz dukkana gidin ve mallar?n?z? siparis edin). Bu mesaj ve istemci ile sunucu aras?nda gonderilen diger tum veriler TCP / IP'yi kullanarak internet baglant?n?z uzerinden gonderilir.
+Sunucu, istemcinin istegini onaylad?g? takdirde, sunucu "Tabii ki o web sitesine bakabilirsiniz!" Anlam?na gelen "200 OK" mesaj? gonderir ve ard?ndan web sitesinin dosyalar?n? bir dizi olarak taray?c?ya gondermeye baslar Veri paketleri olarak adland?r?lan kucuk parcalar?n (dukkan size mal?n?z? verir ve bunlar? evinize geri getirirsiniz).
+Taray?c?, kucuk parcalar?n? eksiksiz bir web sitesinde bir araya getirir ve goruntuler (mallar kap?n?za gelir - yeni parlayan seyler, muthis!).
+
+DNS ac?klad?
+
+Gercek web adresleri, favori web sitelerinizi bulmak icin adres cubugunuza yazd?g?n?z guzel, unutulmaz dizeler degildir. Bunlar asag?daki gibi ozel numaralard?r: 63.245.215.20.
+
+Buna bir IP adresi denir ve Web uzerindeki benzersiz bir konumu temsil eder. Ancak hat?rlamak kolay degil, degil mi? Bu yuzden Alan Ad? Sunucular? icat edildi. Bunlar, taray?c?n?za ("mozilla.org" gibi) web sitenizin gercek (IP) adresine yazd?g?n?z bir web adresiyle eslesen ozel sunuculard?r.
+
+Web sitelerine dogrudan IP adresleri uzerinden ulas?labilir. Yeni bir taray?c? sekmesindeki adres cubuguna 63.245.215.20 yazarak Mozilla web sitesine gitmeyi deneyin.
+
+Paketler ac?kland?
+Daha once "paketler" terimini, verilerin sunucudan istemciye gonderildigi bicimi tan?mlamak icin kulland?k. Ne demek istiyorsun? Temel olarak, web uzerinden veri gonderildiginde binlerce kucuk parca halinde gonderilir, boylece bircok farkl? web kullan?c?s? ayn? web sitesini ayn? anda indirebilir. Web siteleri tek buyuk parcalara gonderildiyse, tek bir kullan?c? bir seferde bir tane indirebilir; bu da ac?kca webin verimsiz olmas?n? ve kullan?lacak kadar eglenceli olmamas?n? saglar.
+
+
+
+
+
+
+
+

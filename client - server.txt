@@ -1,0 +1,100 @@
+?sas m?lumat
+
+Web inkisaf? unsiyy?t v? m?lumat mubadil?si il? bagl?d?r. Bu unsiyy?t HTTP protokolu uz?rind? iki t?r?fd?n kecir.
+Bu partiyalar: client and server
+
+Server
+
+Server, must?ri / son istifad?ci t?l?bin? uygun olaraq veb s?hif?l?r? xidm?t etm?kd?n m?suldur. Statik v? ya dinamik ola bil?r.
+
+Must?ri
+
+Must?ri serverd?n s?hif?l?r? muraci?t ed?n v? son istifad?ciy? gost?r?n bir t?r?fdir. Umumiyy?tl? bir must?ri proqram? bir web browser.
+
+M?s?l?n | Isl?yirik
+
+Asag?dak?lardan istifad? ed?r?k butun bu mexanizmi izah ed? bil?rik:
+
+Istifad?ci oz veb brauzeri (must?ri) ac?r
+Istifad?ci tarama baslay?r
+
+(for example: http://c-sharpcorner.com)
+
+Must?ri bu t?l?bi server? catd?r?r, veb s?hif?sin? daxil olur.
+Server sonra t?l?bi q?bul edir v? cavablar? must?ri proqram?na qaytar?r.
+
+(Bu veb s?hif?y? giris linki)
+ 
+Must?ri sonra s?hif? qaynag?n? al?r v? onu gost?rir.
+
+(Gorun?n / sabit bir sayt?n daxilind?)
+
+Indi axtar?s cubuguna istifad?ci novl?ri
+Must?ri sonra m?lumatlar? server? t?qdim edir
+Server m?lumatlar? isl?yir v? muvafiq axtar?s n?tic?sind? geri cavab verir
+Must?ri yen? istifad?cinin gorunusu ucun onu geri verir
+Istifad?ci ist?nil?n link? daxil olur.
+
+Proqramlasd?rma
+
+Proqramlasd?rma | Server t?r?find?
+
+Server t?r?fli proqramlasd?rma kimi izah edil? bil?r:
+
+Birbasa serverd? isl?y?n proqram novunun umumi ad?d?r.
+
+Yoxsa server t?r?find? proqramlasd?rma dinamik m?zmunla isl?m?lidir. Bu server uz?rind? isl?yir. Axtar?s s?hif?l?rinin bazas? il? m?sgul olduqlar?ndan coxu veb s?hif?l?r statik deyil.
+
+Server-t?r?f | Istifad? edir
+
+Istifad?ci girisini isl?yir
+T?l?b olunan s?hif?l?ri goruntul?yir
+Veb proqramlar?n?n strukturu
+Serverl?r / depolarla qars?l?ql? ?laq?
+Veril?nl?r bazas? il? qars?l?ql? ?laq?
+Veril?nl?r bazas? sorgusu
+Veriyi HTML-d? kodlasd?rma
+Silm?k, yenil?m?k kimi m?lumat bazalar? uz?rind? ?m?liyyatlar.
+
+Server-t?r?f | Dill?r numun?si
+
+Server t?r?find? proqramlasd?rma ucun istifad? edil? bil?n bir nec? dil var:
+
+  PHP
+ASP.NET (C # VEYA Visual Basic)
+C ++
+Java v? JSP
+Python
+Ruby on Rails v? s.
+
+Proqramlasd?rma | Must?ri t?r?fi
+
+Sunucu taraf?nda proqramlasd?rma olaraq, musteri tarafl? proqramlasd?rma da istemcide cal?san butun proqram?n ad?d?r.
+
+Yoxsa must?ri proqramlasd?rma dem?k olar ki, istifad?cinin vebd? qars?l?ql? istifad?ci interfeysi il? m?sgul olur. Bu, ?sas?n, brauzerdir, istifad?cinin mas?n?nda kodu isl?y?n v? ?sas?n JavaScript kimi h?r hans? bir skript dilind? (v? ya JavaScript v? ya VNScript ?v?zin? Flash istifad? ed? bil?rik) edilir.
+
+
+292/5000
+Must?ri t?r?fi | Istifad? edir
+
+Etkilesimli web pages yarad?r
+M?hsullar? dinamik s?kild? isl?yin
+Muv?qq?ti saxlama il? qars?l?ql? ?laq?
+Istifad?ci v? server aras?nda bir interfeys kimi cal?s?r
+Server? sorgu gond?rir
+Serverd?n veril?n m?lumatlar?n al?nmas?
+Yerli saxlama il? qars?l?ql? ?laq?
+Must?ri server proqram? ucun uzaqdan istifad? t?min edir
+
+Must?ri t?r?fi | Dill?r numun?si
+
+Cox musteri taraf? scripting dili d? var.
+
+JavaScript
+VBScript
+HTML (Struktur)
+CSS (Dizayn)
+AJAX
+jQuery v? s.
+(B?zi dill?r d? modell?sdirm? / dizayn / qrafika / animasiyalar v? ?lav? funksiyalar ucun istifad? edil? bil?r.)
+
